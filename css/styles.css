@@ -28,7 +28,7 @@ label {
     margin-bottom: 5px;
 }
 
-button {
+.button {
     width: 100%;
     border: none;
     margin: 0;
@@ -46,27 +46,26 @@ button {
     transition: opacity .25s;
 }
 
-button:hover {
+.button:hover {
     opacity: .75;
 }
 
-button.default {
+.button.default {
     background: #4B8b3b;
     color: #ffffff;
 }
 
-button.cancel {
+.button.cancel {
     background: #9e1a1a;
     color: #ffffff;
 }
 
-button.reset {
+.button.reset {
     background: #666666;
     color: #ffffff;
 }
 
-button.disabled,
-input.disabled {
+.disabled {
     cursor: default;
     opacity: .5;
 }
