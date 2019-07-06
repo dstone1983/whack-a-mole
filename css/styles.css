@@ -1,0 +1,249 @@
+/*
+generic reset
+ */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 50px 0;
+    background: #F8F8F8;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/*
+form defaults
+ */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-transform: uppercase;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity .25s;
+}
+
+button:hover {
+    opacity: .75;
+}
+
+button.default {
+    background: #4B8b3b;
+    color: #ffffff;
+}
+
+button.cancel {
+    background: #9e1a1a;
+    color: #ffffff;
+}
+
+button.reset {
+    background: #666666;
+    color: #ffffff;
+}
+
+button.disabled,
+input.disabled {
+    cursor: default;
+    opacity: .5;
+}
+
+input[type="number"] {
+    border: 1px solid #666666;
+    border-radius: 3px;
+    padding: 5px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+
+/*
+styles for the header
+ */
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+/*
+styles for the actions section
+ */
+section {
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+#whack-actions {
+    flex-direction: column;
+}
+
+#whack-actions > div {
+    width: 95%;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.whack-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.whack-buttons .input-container {
+    width: 33.33%;
+    padding: 0 5%;
+}
+
+.whack-success-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whack-success-count-content {
+    color: #ffffff;
+    width: 50%;
+    border-radius: 5px;
+    padding: 25px 15px;
+    background: cadetblue;
+    text-align: center;
+}
+
+.whack-success-count span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#timer-container {
+    padding: 15px;
+    text-align: center
+}
+
+#timer {
+    font-size: 26px;
+}
+
+#whack-container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.mole-tile {
+    width: 33.33%;
+    background: green;
+    overflow: hidden;
+    position: relative;
+    border: 15px inset white;
+}
+
+.mole-image {
+    position: absolute;
+    bottom: -226px;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 85%;
+    transition: bottom .5s linear;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mole-image.active {
+    bottom: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+    .mole-tile {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .mole-tile {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #whack-container {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 5%;
+    }
+
+    #whack-actions {
+        padding-bottom: 10px;
+    }
+
+    .whack-success-count-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #whack-container {
+        max-width: 95%;
+    }
+
+    #timer-container {
+        padding: 0;
+    }
+
+    #whack-container {
+        max-width: 95%;
+    }
+
+    .mole-tile {
+        border: 5px inset #ffffff;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .mole-tile {
+        height: 100px;
+    }
+
+    .mole-image {
+        transition: bottom .75s linear;
+    }
+}

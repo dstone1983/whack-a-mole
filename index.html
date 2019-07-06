@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Whack A Mole</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Whack a Mole</h1>
+    </header>
+    <section id="whack-actions">
+        <div class="whack-success-count">
+            <div class="whack-success-count-content">
+                <h2>Whack Count</h2>
+                <span id="whack-count-tally">0</span>
+            </div>
+        </div>
+        <div class="whack-buttons">
+            <div class="input-container">
+                <button class="button default" id="whack-start">Start</button>
+            </div>
+            <div class="input-container">
+                <button class="button cancel disabled" id="whack-stop" disabled>Stop</button>
+            </div>
+            <div class="input-container">
+                <button class="button reset" id="whack-reset">Reset</button>
+            </div>
+        </div>
+    </section>
+    <section id="timer-container">
+        <div id="timer"></div>
+    </section>
+    <section id="whack-container">
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+        <div class="mole-tile"><img src="images/mole.png" class="mole-image"></div>
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
